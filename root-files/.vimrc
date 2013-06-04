@@ -1,3 +1,8 @@
+" Force windows to use ~/.vim instead of ~/vimfiles
+if has('win32') || has('win64')
+    set runtimepath=$HOME/.vim,$VIM/vimfiles,$VIMRUNTIME,$VIM/vimfiles/after,$HOME/.vim/after
+endif
+
 execute pathogen#infect()
 
 set sw=4 ts=4 sts=4 noet
