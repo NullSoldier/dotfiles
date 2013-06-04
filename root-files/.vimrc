@@ -27,13 +27,6 @@ filetype plugin on
 au BufNewFile, BufRead *.as set filetype=javascript
 "au BufNewFile *.{h,hpp} call <SID>insert_include_guards()
 
-let g:clang_complete_macros = 1
-let g:clang_auto_select = 1
-let g:clang_complete_auto = 1
-let g:clang_hl_errors = 1
-let g:clang_complete_patterns = 1
-let g:clang_user_options = '-std=c++11'
-
 "Add include guards for .h, .hpp files in C++
 function! s:insert_include_guards()
 	let name = substitute(toupper(expand("%:t")), "\\.", "_", "g")

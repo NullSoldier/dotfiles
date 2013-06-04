@@ -1,9 +1,6 @@
 # DISK SPECIFIC
 alias projects='cd ~/Desktop/Projects'
 alias lg='cd ~/Desktop/Projects/2dlight'
-alias run='./build/light'
-alias build='./build.sh'
-alias pm4="premake4"
 
 # GIT
 alias gs="git status -s -b"
@@ -17,13 +14,19 @@ alias g^="git push"
 alias gp="git checkout -p"
 alias go="git checkout"
 
-export PATH="/usr/local/bin:$PATH"
-
 # DISK NAV
 alias cd.="cd ../"
 alias cd..="cd ../../"
 alias cd...="cd ../../../"
 
+# SYS
+alias build='./build.sh'
+alias lsp='ls -pH'
+alias lsa='ls -pHa'
+
+export PATH="/usr/local/bin:$PATH"
+
+# FUNCTIONS
 function up()
 {
     dir=""
