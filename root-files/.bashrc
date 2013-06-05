@@ -5,7 +5,7 @@ alias lg='cd ~/Desktop/Projects/2dlight'
 # GIT
 alias gs="git status -s -b"
 alias gc="git commit -v"
-alias gcp="gt commit -v -p"
+alias gcp="git commit -v -p"
 alias gi="git add -i" # Different from Vim
 alias g?="git diff"
 alias g??="git diff --cached" # Different from Vim
@@ -32,7 +32,7 @@ function up()
     dir=""
     if [ -z "$1" ]; then
         dir=..
-    elif [[ $1 =~ ^[0-9]+$ ]]; then
+    elif [ $1 =~ ^[0-9]+$ ]; then
         x=0
         while [ $x -lt ${1:-1} ]; do
             dir=${dir}../
