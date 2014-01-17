@@ -30,3 +30,8 @@ function swap()
     mv "$2" "$1"
     mv $TMPFILE "$2"
 }
+
+if [ -f $HOME/.bash_aliases ]
+then
+  . $HOME/.bash_aliases
+fi
