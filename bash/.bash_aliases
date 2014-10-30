@@ -6,6 +6,7 @@ alias lg='cd ~/Desktop/Projects/2dlight'
 alias gs="git status -s -b"
 alias gc="git commit -v"
 alias gcp="git commit -v -p"
+alias gap="git add -p"
 alias gi="git add -i" # Different from Vim
 alias g?="git diff"
 alias g??="git diff --cached" # Different from Vim
