@@ -1,24 +1,13 @@
 #!/bin/sh
 
-HERE="$(cd "$(dirname "$0")" && pwd)"
-OUT="$HOME";
+export HERE="$(cd "$(dirname "$0")" && pwd)"
+export OUT="$HOME";
 
-echo "Installing to $HOME from $OUT"
+echo "Installing to $HOME from $HERE"
 
 for project in bash git vim; do
 	echo "Installing $project to $OUT"
 
-	HEREP="$HERE/$project"
+	export HEREP="$HERE/$project"
 	. "$HEREP/install.sh"
 done
-
-
-#cp -R ./root-files/. $HOME/
-
-#echo "Installing git content to $HOME/.git/"
-#cp -R ./git/. $HOME/.git/
-
-#echo "Installing vim content to $HOME/.vim/"
-#cp -R ./vim/. $HOME/.vim/
-
-#source $HOME/.bashrc
