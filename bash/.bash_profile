@@ -1,3 +1,4 @@
+export MY_PROJECTS="~/Desktop/Projects"
 export PATH="/usr/local/bin:$PATH"
 
 # FUNCTIONS
