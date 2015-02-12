@@ -32,6 +32,11 @@ function swap()
     mv $TMPFILE "$2"
 }
 
+function usedb()
+{
+    export DATABASE_URL=postgres://localhost/"$1"
+}
+
 if [ -f $HOME/.bash_aliases ]
 then
   . $HOME/.bash_aliases
