@@ -14,12 +14,7 @@ alias go="git checkout"
 alias gvu="gv upstream master"
 alias gbl="git branch -l"
 alias gbD="git branch -D"
-alias gnf="git-new-feature"
-
-git-new-feature() {
-  go -b $1;
-  git branch -u origin;
-}
+alias gfu="git fetch upstream"
 
 # DISK NAV
 alias cd.="cd ../"
