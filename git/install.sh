@@ -3,5 +3,5 @@
 # all directories are created
 mkdir -p "$OUT/.git"
 
-cp "$HEREP/.gitconfig" "$OUT/.git/.gitconfig"
-cp "$HEREP/.gitk" "$OUT/.git/.gitk"
+ln -f "$HEREP/.gitconfig" "$OUT/.git/.gitconfig"
+ln -f "$HEREP/.gitk" "$OUT/.git/.gitk"
