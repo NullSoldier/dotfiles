@@ -30,6 +30,19 @@ function swap()
 
 function usedb()
 {
-    open /Applications/Postgres.app
-    export DATABASE_URL="postgres://localhost/$1"
+	if [ -z $1 ]; then
+		unset DATABASE_URL
+	else
+		open /Applications/Postgres.app
+		export DATABASE_URL="postgres://localhost/$1"
+	fi
+}
+
+function whichdb()
+{
+	if [ -z $DATABASE_URL ]; then
+		echo '$DATABASE_URL is not set'
+		return
+	fi
+	echo $DATABASE_URL
 }
