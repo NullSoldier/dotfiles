@@ -30,5 +30,6 @@ function swap()
 
 function usedb()
 {
-    export DATABASE_URL=postgres://localhost/"$1"
+    open /Applications/Postgres.app
+    export DATABASE_URL="postgres://localhost/$1"
 }

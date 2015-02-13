@@ -1,4 +1,3 @@
-
 # GIT
 alias gs="git status -s -b"
 alias gc="git commit -v"

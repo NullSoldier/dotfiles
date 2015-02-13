@@ -1,0 +1,17 @@
+#!/bin/zsh
+
+#compdef usedb
+
+_usedb() {
+    _arguments \
+        '*: :->database'
+
+    local databases tmp
+
+    tmp=$(psql --list -t | awk  -F\| '{ print $1; }' | grep -v "^\s*$" | xargs echo)
+    databases=( ${(f)tmp} )
+
+    compadd -a databases
+}
+
+_usedb "$@"

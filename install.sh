@@ -5,7 +5,7 @@ export OUT="$HOME";
 
 echo "Installing to $HOME from $HERE"
 
-for project in bash git vim; do
+for project in bash git vim zsh; do
 	echo "Installing $project to $OUT"
 
 	export HEREP="$HERE/$project"
