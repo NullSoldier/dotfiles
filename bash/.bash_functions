@@ -38,6 +38,11 @@ function usedb()
 	fi
 }
 
+function copydb()
+{
+	createdb -T $1 $2
+}
+
 function whichdb()
 {
 	if [ -z $DATABASE_URL ]; then
