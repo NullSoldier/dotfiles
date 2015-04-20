@@ -1,7 +1,7 @@
 #!/bin/sh
 
-ln -f "$HEREP/.vimrc" "$OUT/.vimrc"
+mkdir -p "$OUT/.vim/"
 
-mkdir -p "$OUT/.vim"
-ln -f "$HEREP/autoload/" "$OUT/.vim/autoload/"
-ln -f "$HEREP/bundle/" "$OUT/.vim/bundle/"
+ln -f "$HEREP/.vimrc" "$OUT/.vimrc"
+ln -f -s "$HEREP/autoload" "$OUT/.vim/autoload"
+ln -f -s "$HEREP/bundle" "$OUT/.vim/bundle"
