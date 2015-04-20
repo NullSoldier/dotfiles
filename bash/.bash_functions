@@ -33,7 +33,6 @@ function usedb()
 	if [ -z $1 ]; then
 		unset DATABASE_URL
 	else
-		open /Applications/Postgres.app
 		export DATABASE_URL="postgres://localhost/$1"
 	fi
 }
