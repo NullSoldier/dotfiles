@@ -11,7 +11,6 @@ set noautoindent
 set cindent
 set backspace=indent,eol,start
 
-set textwidth=60
 set relativenumber
 
 set hlsearch
