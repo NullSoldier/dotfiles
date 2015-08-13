@@ -33,7 +33,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'lsdr/monokai'
+Plugin 'crusoexia/vim-monokai'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'kchmck/vim-coffee-script'
@@ -41,10 +41,11 @@ Plugin 'kchmck/vim-coffee-script'
 call vundle#end()
 filetype on
 
-" Pathogen plugin manager
-execute pathogen#infect()
+" Color scheme
+colorscheme monokai
+let g:monokai_zentree = 1
 
-"Add include guards for .h, .hpp files in C++
+" Add include guards for .h, .hpp files in C++
 function! s:insert_include_guards()
 	let name = substitute(toupper(expand("%:t")), "\\.", "_", "g")
 	execute "normal! i#ifndef " . name . "\<CR>#define " . name . "\<CR>\<CR>#endif"
