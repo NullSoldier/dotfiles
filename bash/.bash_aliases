@@ -14,6 +14,7 @@ alias gvu="gv upstream master"
 alias gbl="git branch -l"
 alias gbD="git branch -D"
 alias gfu="git fetch upstream"
+alias gcleanpr="gbl | grep pr | xargs git branch -D"
 
 # DISK NAV
 alias cd.="cd ../"
@@ -32,11 +33,13 @@ alias clog="cd $MY_PROJECTS/clog"
 
 # BetterWorks
 alias wob='bworks'
-alias wob-test='wob && ./manage.py test --failfast'
+alias wob-test='wob && py.test -n 4 -x'
 alias wob-run='wob && ./manage.py runserver'
 alias wob-mig='wob && ./manage.py migrate'
 alias wob-grunt='wob && cd appfiles && grunt server'
-alias wob-karma='wob && cd appfiles && karma start'
-alias wob-sel='wob && cd appfiles && webdriver-manager start'
-alias wob-protractor='wob && cd appfiles && protractor protractor.conf.js'
+alias wob-karma='wob && cd appfiles && ./karma.sh' 
+alias wob-protractor='wob && ./protractor.sh'
+alias wob-elastic='projects && ./elasticsearch/bin/elasticsearch'
+alias wob-jira='projects && cd Jira-Connector && ./manage.py runserver 8001'
 alias wob-deploy-branch='./build-current-branch.sh && git push heroku Build:master -f'
+
