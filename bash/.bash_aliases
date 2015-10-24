@@ -1,4 +1,5 @@
 # GIT
+#
 alias gs="git status -s -b"
 alias gc="git commit -v"
 alias gcp="git commit -v -p"
@@ -37,9 +38,9 @@ alias wob-test='wob && py.test -n 4 -x'
 alias wob-run='wob && ./manage.py runserver'
 alias wob-mig='wob && ./manage.py migrate'
 alias wob-grunt='wob && cd appfiles && grunt server'
-alias wob-karma='wob && cd appfiles && ./karma.sh' 
+alias wob-karma='wob && cd appfiles && ./karma.sh'
 alias wob-protractor='wob && ./protractor.sh'
 alias wob-elastic='projects && ./elasticsearch/bin/elasticsearch'
 alias wob-jira='projects && cd Jira-Connector && ./manage.py runserver 8001'
 alias wob-deploy-branch='./build-current-branch.sh && git push heroku Build:master -f'
-
+alias wob-valid='wob && flake8 && isortq && cd appfiles && grunt coffeelint'
