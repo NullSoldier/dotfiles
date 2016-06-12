@@ -20,6 +20,9 @@ export HASTE_SERVER=https://h.betterworks.com
 export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
 export LIBMEMCACHED=/opt/local
 
+export JIRA_CONNECTOR_HOST=http://127.0.0.1:8001
+export SALESFORCE_CONNECTOR_HOST=http://127.0.0.1:8002
+
 source ~/.bash_aliases
 source ~/.bash_profile
 source ~/.zsh/completion/config
