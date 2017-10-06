@@ -60,3 +60,5 @@ alias tt="cd c:/Telltale"
 alias tt-t3="cd c:/Telltale/T3"
 alias tt-script="cd $MY_PROJECTS/webtools/scriptreader"
 alias tt-tb="vs14build /c/Telltale/T3/Build/Tool/Tool.sln //build 'Debug|x64' //sn-dbs"
+
+alias subl="/c/Program\ Files/Sublime\ Text\ 3/subl.exe"
