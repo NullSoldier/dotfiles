@@ -31,7 +31,7 @@ fi
 
 	echo "Installing on $platform to $HOME from $HERE"
 
-	for project in bash git vim zsh tmux psql conemu; do
+	for project in bash git hg vim zsh tmux psql conemu; do
 		export HEREP="$HERE/$platform/$project"
 		export INSTALL_SCRIPT="$HEREP/install.sh"
 
