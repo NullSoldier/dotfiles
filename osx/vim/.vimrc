@@ -30,20 +30,20 @@ endif
 " Vundle plugin manager
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+"call vundle#begin()
 
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'crusoexia/vim-monokai'
-Plugin 'kien/ctrlp.vim'
-Plugin 'scrooloose/nerdtree'
-Plugin 'kchmck/vim-coffee-script'
+"Plugin 'VundleVim/Vundle.vim'
+"Plugin 'crusoexia/vim-monokai'
+"Plugin 'kien/ctrlp.vim'
+"Plugin 'scrooloose/nerdtree'
+"Plugin 'kchmck/vim-coffee-script'
 
-call vundle#end()
+"call vundle#end()
 filetype on
 
 " Color scheme
-colorscheme monokai
-let g:monokai_zentree = 1
+"colorscheme monokai
+"let g:monokai_zentree = 1
 
 " Add include guards for .h, .hpp files in C++
 function! s:insert_include_guards()
