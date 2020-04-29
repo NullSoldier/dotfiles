@@ -14,7 +14,12 @@ alias gvu="gv upstream master"
 alias gbl="git branch -l"
 alias gbD="git branch -D"
 alias gfu="git fetch upstream"
-alias gcleanpr="gbl | grep pr | xargs git branch -D"
+alias gcleanpr="git branch -l | xargs git branch -d"
+alias gwip="git add --all && git commit -m WIP"
+alias gpop="git reset --soft HEAD~1 && git reset"
+alias gfu='git fetch upstream'
+alias glog='git log --graph --pretty=format:"%C(yellow)%h%Creset%C(cyan)%C(bold)%d%Creset %C(cyan)(%cr)%Creset %C(green)%ce%Creset %s"'
+alias gca='git commit --amend'
 
 # Mercurial
 alias hpop="hg strip --keep -r ."
@@ -33,6 +38,11 @@ alias lsa='ls -pHa'
 alias projects="cd $MY_PROJECTS"
 alias bworks="cd $MY_PROJECTS/BetterWorks"
 alias clog="cd $MY_PROJECTS/clog"
+
+# Sunrise 
+alias sunrise="cd $MY_PROJECTS/sunrise"
+alias sunrise-client="cd $MY_PROJECTS/sunrise/client"
+alias sunrise-server="cd $MY_PROJECTS/sunrise/server"
 
 # BetterWorks
 alias wob='bworks'
@@ -54,10 +64,15 @@ alias lsvirtualenv='/c/Python27/scripts/lsvirtualenv.bat'
 alias rmvirtualenv='/c/Python27/scripts/rmvirtualenv.bat'
 alias workon='/c/Python27/scripts/workon.bat'
 alias deactivate='/c/Python27/scripts/deactivate.bat'
-alias python3='/c/Python36/python.exe'
 
 #Telltale
 alias tt="cd c:/Telltale"
 alias tt-t3="cd c:/Telltale/T3"
 alias tt-script="cd $MY_PROJECTS/webtools/scriptreader"
 alias tt-tb="vs14build /c/Telltale/T3/Build/Tool/Tool.sln //build 'Debug|x64' //sn-dbs"
+
+# Mac OSX
+alias subl="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
+
+alias killflow="kill $(ps -e | grep flow | awk ‘{print $1}’)"
+alias restartflow="(pgrep flow | xargs kill && pronto && npm run flow)"

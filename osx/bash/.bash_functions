@@ -50,3 +50,17 @@ function whichdb()
 	fi
 	echo $DATABASE_URL
 }
+
+function runtest()
+{
+	test_number=1
+	$@
+		clear
+
+	while [ $? -eq 0 ]; do
+		test_number=$((test_number+1))
+		echo "RUNNING TEST $test_number"
+		$@
+		clear
+	done
+}
