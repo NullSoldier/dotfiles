@@ -71,6 +71,15 @@ alias tt-t3="cd c:/Telltale/T3"
 alias tt-script="cd $MY_PROJECTS/webtools/scriptreader"
 alias tt-tb="vs14build /c/Telltale/T3/Build/Tool/Tool.sln //build 'Debug|x64' //sn-dbs"
 
+# Playtable
+alias pt="cd $MY_PROJECTS/playtable"
+alias pt-common="pt; cd common"
+alias pt-common-run="pt-common; npm run watch"
+alias pt-app="pt; cd app"
+alias pt-app-run="pt-app; npm run start"
+alias pt-api="pt; cd platform"
+alias pt-api-run="pt-api; npm run dev"
+
 # Mac OSX
 alias subl="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
 
