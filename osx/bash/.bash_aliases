@@ -78,10 +78,29 @@ alias pt-common-run="pt-common; npm run watch"
 alias pt-app="pt; cd app"
 alias pt-app-run="pt-app; npm run start"
 alias pt-api="pt; cd platform"
-alias pt-api-run="pt-api; npm run dev"
+alias pt-api-run="pt-api; npm run start"
+alias pt-api-run-api="pt-api; npm run start:api"
+alias pt-api-run-table="pt-api; npm run start:table"
+alias pt-proxy="pt; cd proxy"
+alias pt-proxy-run="pt-proxy; npm run start"
+alias pt-agones="pt; cd agones"
+alias pt-agones-run="pt-agones; npm run start"
+
+# Ironfish
+alias fish="cd $MY_PROJECTS/fish"
+alias fish-cli="fish; cd ironfish-cli"
+alias fish-node="fish; cd ironfish"
+alias fish-captain="fish; cd captain"
+alias fish-fish="fish; cd ironfish"
+alias fish-wasm="fish; cd ironfish-wasm"
+alias fish-tf="cd $MY_PROJECTS/fish-terraform"
+
 
 # Mac OSX
 alias subl="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
 
 alias killflow="kill $(ps -e | grep flow | awk ‘{print $1}’)"
-alias restartflow="(pgrep flow | xargs kill && pronto && npm run flow)"
+
+# Kubernetes
+alias kube="kubectl"
+alias dock="doctl"
