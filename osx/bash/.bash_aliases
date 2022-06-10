@@ -65,13 +65,13 @@ alias rmvirtualenv='/c/Python27/scripts/rmvirtualenv.bat'
 alias workon='/c/Python27/scripts/workon.bat'
 alias deactivate='/c/Python27/scripts/deactivate.bat'
 
-#Telltale
+# Telltale
 alias tt="cd c:/Telltale"
 alias tt-t3="cd c:/Telltale/T3"
 alias tt-script="cd $MY_PROJECTS/webtools/scriptreader"
 alias tt-tb="vs14build /c/Telltale/T3/Build/Tool/Tool.sln //build 'Debug|x64' //sn-dbs"
 
-# Playtable
+# RollTable 
 alias pt="cd $MY_PROJECTS/playtable"
 alias pt-common="pt; cd common"
 alias pt-common-run="pt-common; npm run watch"
@@ -95,11 +95,8 @@ alias fish-fish="fish; cd ironfish"
 alias fish-wasm="fish; cd ironfish-wasm"
 alias fish-tf="cd $MY_PROJECTS/fish-terraform"
 
-
 # Mac OSX
 alias subl="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
-
-alias killflow="kill $(ps -e | grep flow | awk ‘{print $1}’)"
 
 # Kubernetes
 alias kube="kubectl"
