@@ -1,6 +1,8 @@
 # show completion menu when number of options is at least 2
 zstyle ':completion:*' menu select=2
 
+PS1="%n %1~ > "
+
 export EDITOR='vim'
 compctl -g '~/.teamocil/*(:t:r)' teamocil
 
