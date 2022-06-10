@@ -89,14 +89,11 @@ alias pt-agones-run="pt-agones; npm run start"
 # Ironfish
 alias fish="cd $MY_PROJECTS/fish"
 alias fish-cli="fish; cd ironfish-cli"
-alias fish-node="fish; cd ironfish"
-alias fish-captain="fish; cd captain"
 alias fish-fish="fish; cd ironfish"
-alias fish-wasm="fish; cd ironfish-wasm"
-alias fish-tf="cd $MY_PROJECTS/fish-terraform"
-
-# Mac OSX
-alias subl="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
+alias fish-website="cd $MY_PROJECTS; cd fish-website"
+alias fish-testnet="cd $MY_PROJECTS; cd fish-testnet"
+alias fish-explorer="cd $MY_PROJECTS; cd fish-explorer"
+alias fish-terraform="cd $MY_PROJECTS; cd fish-terraform"
 
 # Kubernetes
 alias kube="kubectl"
