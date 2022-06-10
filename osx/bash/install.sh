@@ -5,3 +5,4 @@ ln -f "$HEREP/.bash_aliases" "$OUT/.bash_aliases"
 ln -f "$HEREP/.bash_functions" "$OUT/.bash_functions"
 
 touch ~/.bash_profile && grep -qxF 'source ~/.bash_home' ~/.bash_profile || echo 'source ~/.bash_home' >> ~/.bash_profile
+touch ~/.bash_profile && grep -qxF 'source ~/.bash_keys' ~/.bash_profile || echo 'source ~/.bash_keys' >> ~/.bash_profile
