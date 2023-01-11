@@ -7,7 +7,3 @@ ln -f -s "$HEREP/completion/" "$OUT/.zsh/"
 
 # Only use zshrc to link to other things
 touch ~/.zshrc && grep -qxF 'source ~/.zsh_home' ~/.zshrc || echo 'source ~/.zsh_home' >> ~/.zshrc
-
-if [ -z $ZSH_NAME ]; then
-    source ~/.zshrc
-fi
