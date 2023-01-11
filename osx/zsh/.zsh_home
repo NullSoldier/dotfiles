@@ -1,7 +1,7 @@
 # show completion menu when number of options is at least 2
 zstyle ':completion:*' menu select=2
 
-PS1="%n %1~ > "
+PROMPT="%F{cyan}%n%f:%1~> "
 
 export EDITOR='vim'
 compctl -g '~/.teamocil/*(:t:r)' teamocil
@@ -14,13 +14,10 @@ fpath=(~/.zsh/completion $fpath)
 autoload -U compinit
 compinit
 
-export WORKON_HOME=$USERPROFILE\\Envs
-export ARCHFLAGS=-Wno-error=unused-command-line-argument-hard-error-in-future
-export LIBMEMCACHED=/opt/local
-
-source ~/.bash_profile
-source ~/.zsh/completion/config
-
+# git
 __git_files () {
   _wanted files expl 'local files' _files
 }
+
+source ~/.bash_profile
+source ~/.zsh/completion/config
