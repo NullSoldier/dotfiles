@@ -12,6 +12,11 @@ then
   . $HOME/.bash_aliases
 fi
 
+if [ -f $HOME/.bash_keys ]
+then
+  . $HOME/.bash_keys
+fi
+
 if [ -f $HOME/.bash_functions ]
 then
   . $HOME/.bash_functions
