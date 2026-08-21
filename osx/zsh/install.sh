@@ -7,3 +7,6 @@ ln -f -s "$HEREP/completion/" "$OUT/.zsh/"
 
 # Only use zshrc to link to other things
 touch ~/.zshrc && grep -qxF 'source ~/.zsh_home' ~/.zshrc || echo 'source ~/.zsh_home' >> ~/.zshrc
+
+# Sanity-check that the installed zshrc/zsh_home source cleanly under zsh
+zsh -c 'source ~/.zshrc'
