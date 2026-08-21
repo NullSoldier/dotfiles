@@ -1,2 +1,4 @@
 osx/vim/bundle/*
 windows/vim/bundle/*
+osx/vim/autoload/autoload
+windows/vim/autoload/autoload
