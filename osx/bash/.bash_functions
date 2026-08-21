@@ -64,3 +64,14 @@ function runtest()
 		clear
 	done
 }
+
+
+function gitdefaultbranch()
+{
+	local branch=$(git symbolic-ref refs/remotes/upstream/HEAD 2>/dev/null | cut -d'/' -f4)
+	if [ -z "$branch" ]; then
+		echo "gitdefaultbranch: could not determine default branch for remote 'upstream' (try: git remote set-head upstream -a)" >&2
+		return 1
+	fi
+	echo "$branch"
+}
