@@ -5,7 +5,14 @@ export PATH="$PATH:/Applications/Postgres.app/Contents/Versions/latest/bin"
 
 export OPENSSL_ROOT_DIR=`brew --prefix openssl`
 
+# Iron Fish
 export OCLIF_TS_NODE=0
+
+# Oreowallet
+export PATH="/opt/homebrew/opt/llvm/bin:$PATH"
+export LDFLAGS="-L/opt/homebrew/opt/llvm/lib"
+export CPPFLAGS="-I/opt/homebrew/opt/llvm/include"
+export NODE_OPTIONS="--max-old-space-size=8192"
 
 if [ -f $HOME/.bash_aliases ]
 then

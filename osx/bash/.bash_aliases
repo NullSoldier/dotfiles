@@ -60,11 +60,11 @@ alias wob-deploy-branch='./build-current-branch.sh && git push heroku Build:mast
 alias wob-valid='wob && flake8 && isortq && cd appfiles && grunt coffeelint'
 
 # Virtual Env
-alias mkvirtualenv='/c/Python27/scripts/mkvirtualenv.bat'
-alias lsvirtualenv='/c/Python27/scripts/lsvirtualenv.bat'
-alias rmvirtualenv='/c/Python27/scripts/rmvirtualenv.bat'
-alias workon='/c/Python27/scripts/workon.bat'
-alias deactivate='/c/Python27/scripts/deactivate.bat'
+# alias mkvirtualenv='/c/Python27/scripts/mkvirtualenv.bat'
+# alias lsvirtualenv='/c/Python27/scripts/lsvirtualenv.bat'
+# alias rmvirtualenv='/c/Python27/scripts/rmvirtualenv.bat'
+# alias workon='/c/Python27/scripts/workon.bat'
+# alias deactivate='/c/Python27/scripts/deactivate.bat'
 
 # Telltale
 alias tt="cd c:/Telltale"
@@ -91,11 +91,13 @@ alias fish="cd $MY_PROJECTS/fish"
 alias fish-cli="fish; cd ironfish-cli"
 alias fish-fish="fish; cd ironfish"
 alias fish-api="cd $MY_PROJECTS; cd fish-api"
+alias fish-wallet-cli="cd $MY_PROJECTS; cd fish-wallet-cli"
 alias fish-website="cd $MY_PROJECTS; cd fish-website"
 alias fish-testnet="cd $MY_PROJECTS; cd fish-testnet"
 alias fish-explorer="cd $MY_PROJECTS; cd fish-explorer"
 alias fish-terraform="cd $MY_PROJECTS; cd fish-terraform"
-alias fishy="fish-cli; nvm use &> /dev/null; yarn build &> /dev/null; ./bin/ironfish"
+alias fishu="fish-cli; nvm use &> /dev/null; outputonfail yarn build && ./bin/ironfish"
+alias fishy="fish-cli; nvm use &> /dev/null; yarn build && ./bin/ironfish"
 
 # Chrome
 alias unsafechrome="/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --disable-web-security --ignore-certificate-errors --ignore-urlfetcher-cert-requests &> /dev/null"
